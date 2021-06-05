@@ -1,19 +1,8 @@
-<!-- A landing page containing:
-An explanation of the project.
-Links to each visualizations page. 
-There should be a sidebar containing 
-preview images of each plot, 
-and clicking an image 
-should take the user to that 
-visualization. -->
-
-
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Web-Visualization</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -28,12 +17,11 @@ visualization. -->
 
 
   <link rel="stylesheet" href="styles.css">
-</head>  
+</head>
 
-<!-- body -->
 
 <body>
-  <!-- header -->
+  <!--  header -->
   <div>
     <div class="row">
       <div class="col col-6 homebtn">
@@ -47,7 +35,6 @@ visualization. -->
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav">
@@ -77,27 +64,24 @@ visualization. -->
       </div>
     </div>
   </div>
-  <!-- main body -->
+  <!--  main body -->
   <div class="container">
     <br>
     <div class="row">
       
       <div class="col col-12 col-md-8 divbdy">
         <br>
-        <h1>Summary: Latitude vs. X</h1>
+        <h1>Max_Temperature</h1>
         <hr>
-        <img src="../Resources/TempmaxVlatitude_All_Cities.png" alt="Latitude vs. Temperature" width="280" align="left">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-          accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
-          cities.</p>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
-          we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
-          and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
-          correlations witnesseed.</p>
+        <a href="vp_1.html"><img src="../Resources/TempmaxVlatitude_All_Cities.png" alt="Latitude vs. Temperature"></a>
+
+        <p>
+        As expected,the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the notherm hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+        </p>
         <hr>
       </div>
       
-      <div class="col col-8 col-md-4 divbdy">
+      <div class="col col-12 col-md-4 divbdy">
         <br>
         <h2>Visualizations</h2>
         <hr>
@@ -116,8 +100,4 @@ visualization. -->
           </div>
         </div>
       </div>
-    
-    </div>
-  </div>
-
 </html>
